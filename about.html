@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – RobloxDownload.mom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #f9f9f9; }
+    header { background: #111; color: white; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo a { color: white; text-decoration: none; font-weight: 600; font-size: 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
+    nav ul li a { color: white; text-decoration: none; }
+    .menu-toggle { display: none; color: white; background: none; border: none; font-size: 24px; }
+    @media (max-width: 768px) { nav ul { display: none; flex-direction: column; background: #222; position: absolute; top: 60px; right: 0; width: 200px; padding: 15px; } nav ul.show { display: block; } .menu-toggle { display: block; } }
+    .content { padding: 50px 20px; max-width: 800px; margin: auto; text-align: center; }
+    h1 { color: #111; }
+    p { color: #444; line-height: 1.6; }
+    footer { text-align: center; background: #111; color: white; padding: 15px 0; margin-top: 40px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>About RobloxDownload.mom</h1>
+    <p>RobloxDownload.mom provides safe, verified links to download the Roblox setup for PC, Android, and iOS. Our goal is to make it easy for users to get Roblox without fake ads or unsafe redirects.</p>
+    <p>This website is fan-made and not affiliated with Roblox Corporation. Always ensure you’re downloading files safely and responsibly.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 RobloxDownload.mom | All Rights Reserved.
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
