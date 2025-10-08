@@ -11,10 +11,10 @@
   <meta name="description" content="Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily." />
 
   <!-- ✅ Favicon -->
-<link rel="icon" type="image/png" href="https://robloxdownload.mom/Roblox_Corporation_2025_logo.png" />
-<link rel="shortcut icon" href="https://robloxdownload.mom/Roblox_Corporation_2025_logo.png" type="image/png" />
+  <link rel="icon" type="image/png" href="https://robloxdownload.mom/Roblox_Corporation_2025_logo.png" />
+  <link rel="shortcut icon" href="https://robloxdownload.mom/Roblox_Corporation_2025_logo.png" type="image/png" />
 
-
+  <!-- ✅ Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -30,6 +30,7 @@
       display: flex;
       flex-direction: column;
     }
+
     header {
       background: #111;
       color: white;
@@ -87,7 +88,58 @@
       }
     }
 
-    /* Main Content */
+    /* ✅ Banner Section */
+    .hero-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #000000, #1a1a40);
+      color: white;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+    .banner-content {
+      max-width: 550px;
+    }
+    .banner-content h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #00b3ff;
+    }
+    .banner-content p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+    .banner-btn {
+      background: #00b3ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .banner-btn:hover {
+      background: #007acc;
+    }
+    .banner-image img {
+      max-width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    @media (max-width: 768px) {
+      .hero-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner-image img {
+        margin-top: 20px;
+      }
+    }
+
+    /* ✅ Main Section */
     main {
       flex: 1;
       display: flex;
@@ -146,11 +198,21 @@
     </nav>
   </header>
 
+  <!-- ✅ Stylish Banner Section -->
+  <section class="hero-banner">
+    <div class="banner-content">
+      <h1>Download Roblox APK – Free & Safe (2025)</h1>
+      <p>Experience endless fun! Download the latest Roblox APK securely from RobloxDownload.mom.</p>
+      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="banner-btn">Download Now</a>
+    </div>
+    <div class="banner-image">
+      <img src="banner-image.png" alt="Roblox Banner">
+    </div>
+  </section>
+
   <main>
     <section class="hero">
       <h1>Roblox APK Download – Safe, Free & Updated 2025</h1>
-    
-      <!-- ✅ Download Link -->
       <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip"
          class="download-btn"
          target="_blank"
@@ -163,7 +225,6 @@
 
   <footer>
     <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily. Get the newest version and start your Roblox adventure today!</h3>
-    
     &copy; 2025 RobloxDownload.mom | All Rights Reserved.
   </footer>
 
