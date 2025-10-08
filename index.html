@@ -18,11 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
     html, body {
       height: 100%;
       font-family: 'Poppins', sans-serif;
@@ -40,27 +36,14 @@
       align-items: center;
       flex-shrink: 0;
     }
-    .logo a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 20px;
-    }
+    .logo a {color: white; text-decoration: none; font-weight: 600; font-size: 20px;}
     nav ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       gap: 20px;
     }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
+    nav ul li a {color: white; text-decoration: none; font-weight: 500;}
+    nav ul li a:hover {text-decoration: underline;}
     .menu-toggle {
       display: none;
       color: white;
@@ -74,21 +57,15 @@
         flex-direction: column;
         background: #222;
         position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 15px;
+        top: 60px; right: 0;
+        width: 200px; padding: 15px;
         border-radius: 6px 0 0 6px;
       }
-      nav ul.show {
-        display: block;
-      }
-      .menu-toggle {
-        display: block;
-      }
+      nav ul.show {display: block;}
+      .menu-toggle {display: block;}
     }
 
-    /* ✅ Banner Section */
+    /* ✅ Stylish Banner */
     .hero-banner {
       display: flex;
       align-items: center;
@@ -98,9 +75,7 @@
       padding: 60px 20px;
       flex-wrap: wrap;
     }
-    .banner-content {
-      max-width: 550px;
-    }
+    .banner-content {max-width: 550px;}
     .banner-content h1 {
       font-size: 36px;
       margin-bottom: 15px;
@@ -121,58 +96,57 @@
       font-weight: bold;
       transition: 0.3s ease;
     }
-    .banner-btn:hover {
-      background: #007acc;
-    }
+    .banner-btn:hover {background: #007acc;}
     .banner-image img {
       max-width: 350px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
     @media (max-width: 768px) {
-      .hero-banner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner-image img {
-        margin-top: 20px;
-      }
+      .hero-banner {flex-direction: column; text-align: center;}
+      .banner-image img {margin-top: 20px;}
     }
 
-    /* ✅ Main Section */
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 80px 20px;
+    /* ✅ Main Content */
+    main {flex: 1; padding: 60px 20px; display: flex; flex-direction: column; align-items: center;}
+
+    .article {
+      max-width: 800px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
     }
-    .hero {
-      max-width: 700px;
+    .article h2 {color: #111; margin-bottom: 15px;}
+    .article p, .article li {color: #444; line-height: 1.7;}
+    .article ul, .article ol {margin-left: 20px; margin-top: 10px;}
+    .article a {color: #007acc;}
+
+    /* ✅ Related Articles */
+    .related {
+      max-width: 800px;
+      margin-top: 40px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
     }
-    .hero h1 {
-      font-size: 2rem;
+    .related h3 {
       color: #111;
+      margin-bottom: 20px;
+      border-left: 4px solid #007acc;
+      padding-left: 10px;
     }
-    .hero p {
-      font-size: 1.1rem;
-      color: #444;
-      margin-top: 10px;
-    }
-    .download-btn {
-      display: inline-block;
-      background: #ff4747;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      margin-top: 25px;
-      font-weight: 600;
+    .related ul {list-style: none; padding-left: 0;}
+    .related ul li {margin-bottom: 10px;}
+    .related ul li a {
+      color: #007acc;
       text-decoration: none;
+      font-weight: 500;
     }
-    .download-btn:hover {
-      background: #e63e3e;
-    }
+    .related ul li a:hover {text-decoration: underline;}
 
     footer {
       background: #111;
@@ -198,7 +172,7 @@
     </nav>
   </header>
 
-  <!-- ✅ Stylish Banner Section -->
+  <!-- ✅ Stylish Banner -->
   <section class="hero-banner">
     <div class="banner-content">
       <h1>Download Roblox APK – Free & Safe (2025)</h1>
@@ -211,20 +185,45 @@
   </section>
 
   <main>
-    <section class="hero">
-      <h1>Roblox APK Download – Safe, Free & Updated 2025</h1>
-      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip"
-         class="download-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         download>
-        Download Now
-      </a>
+    <!-- ✅ Article Section -->
+    <section class="article">
+      <h2>Roblox APK Features & Installation Guide (2025)</h2>
+      <p>Roblox is one of the world’s most popular gaming platforms, enabling players to create, share, and explore immersive virtual worlds. The 2025 update of the Roblox APK offers better graphics, improved security, and a smoother gaming experience.</p>
+
+      <h3>⭐ Key Features</h3>
+      <ul>
+        <li>Massive multiplayer gaming experience</li>
+        <li>Create your own worlds with Roblox Studio</li>
+        <li>New parental control system for safe play</li>
+        <li>Optimized performance for Android devices</li>
+      </ul>
+
+      <h3>📲 How to Install Roblox APK</h3>
+      <ol>
+        <li>Download the APK file from <a href="https://robloxdownload.mom/">RobloxDownload.mom</a>.</li>
+        <li>Enable “Install from Unknown Sources” in your Android settings.</li>
+        <li>Open the APK and tap “Install”.</li>
+        <li>Launch Roblox and start playing or creating your world!</li>
+      </ol>
+
+      <h3>⚠️ Safety Tip</h3>
+      <p>Always download Roblox from trusted sites like RobloxDownload.mom to avoid viruses or fake versions. We ensure the latest, safe, and official APK releases only.</p>
+    </section>
+
+    <!-- ✅ Related Articles -->
+    <section class="related">
+      <h3>More Articles You May Like</h3>
+      <ul>
+        <li><a href="#">Roblox Update 2025 – What’s New in the Latest Version</a></li>
+        <li><a href="#">Top 5 Roblox Games You Must Try This Year</a></li>
+        <li><a href="#">Roblox MOD APK vs Original – Which is Safer?</a></li>
+        <li><a href="#">How to Fix Roblox Login & Server Errors (Guide)</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily. Get the newest version and start your Roblox adventure today!</h3>
+    <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.</h3>
     &copy; 2025 RobloxDownload.mom | All Rights Reserved.
   </footer>
 
