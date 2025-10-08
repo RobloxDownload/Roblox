@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Download – Get the Latest Roblox Setup</title>
+  <meta name="description" content="Download the latest version of Roblox from RobloxDownload.mom – safe and direct links to enjoy Roblox on your PC or mobile." />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2022.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .menu-toggle {
+      display: none;
+      color: white;
+      background: none;
+      border: none;
+      font-size: 24px;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+        border-radius: 6px 0 0 6px;
+      }
+      nav ul.show {
+        display: block;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* Main Content */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      color: #111;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 10px;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #ff4747;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      margin-top: 25px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .download-btn:hover {
+      background: #e63e3e;
+    }
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Download Roblox for PC & Mobile</h1>
+    <p>Get the latest version of Roblox and start your gaming adventure today. 100% safe and direct download links available.</p>
+    <a href="#" class="download-btn">Download Now</a>
+  </section>
+
+  <footer>
+    &copy; 2025 RobloxDownload.mom | All Rights Reserved.
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
