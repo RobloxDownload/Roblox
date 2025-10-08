@@ -15,7 +15,7 @@
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family:'Poppins',sans-serif;
-      background:#f9f9f9;
+      background:linear-gradient(135deg,#e3f2fd,#ffffff);
       display:flex;
       flex-direction:column;
       min-height:100vh;
@@ -33,7 +33,7 @@
     .logo a { color:#fff; text-decoration:none; font-weight:600; font-size:20px; }
     nav ul { list-style:none; display:flex; gap:20px; }
     nav ul li a { color:#fff; text-decoration:none; font-weight:500; transition:color .3s; }
-    nav ul li a:hover { color:#00ffb3; }
+    nav ul li a:hover { color:#00b3ff; }
     .menu-toggle { display:none; color:#fff; background:none; border:none; font-size:24px; }
 
     @media(max-width:768px){
@@ -45,38 +45,50 @@
     /* Terms Section */
     .terms-section {
       padding:60px 20px;
-      background:linear-gradient(135deg,#0d0d0d,#1a1a1a);
-      color:#fff;
       flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
     }
-    .terms-section .container {
+
+    .terms-card {
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.1);
       max-width:900px;
-      margin:auto;
+      width:100%;
+      padding:40px;
+      color:#333;
     }
-    .terms-section h1 {
-      font-size:2.5rem;
+
+    .terms-card h1 {
+      font-size:2.2rem;
       text-align:center;
-      color:#00ffb3;
+      color:#007acc;
       margin-bottom:25px;
-      text-shadow:0 0 10px #00bfff;
     }
-    .terms-section h2 {
-      font-size:1.8rem;
-      color:#00e0ff;
-      margin-top:40px;
+    .terms-card h2 {
+      font-size:1.5rem;
+      color:#00b3ff;
+      margin-top:30px;
     }
-    .terms-section p {
+    .terms-card p {
       line-height:1.8;
       font-size:1rem;
       margin-top:10px;
+      color:#444;
     }
-    .terms-section ul {
+    .terms-card ul {
       margin-top:10px;
       padding-left:20px;
     }
-    .terms-section li {
+    .terms-card li {
       margin-top:8px;
       list-style:disc;
+      color:#444;
+    }
+    .terms-card strong {
+      color:#007acc;
     }
 
     footer {
@@ -98,14 +110,14 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="terms.html" style="color:#00e0ff;">Terms</a></li>
+        <li><a href="terms.html" style="color:#00b3ff;">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="terms-section">
-    <div class="container">
+    <div class="terms-card">
       <h1>Terms & Conditions</h1>
       <p>
         Welcome to <strong>RobloxDownload.mom</strong>. By accessing our website, you agree to follow and be bound by the following Terms and Conditions. Please read them carefully before using our services.
