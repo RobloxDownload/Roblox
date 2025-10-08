@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robloxdownload-mom.github.io/sitemap.xml
