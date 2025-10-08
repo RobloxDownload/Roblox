@@ -8,10 +8,17 @@
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2022.svg" type="image/svg+xml" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
       font-family: 'Poppins', sans-serif;
       background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background: #111;
@@ -20,6 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-shrink: 0;
     }
     .logo a {
       color: white;
@@ -70,9 +78,16 @@
     }
 
     /* Main Content */
-    .hero {
+    main {
+      flex: 1; /* Pushes footer to bottom */
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 80px 20px;
+    }
+    .hero {
+      max-width: 700px;
     }
     .hero h1 {
       font-size: 2rem;
@@ -96,13 +111,14 @@
     .download-btn:hover {
       background: #e63e3e;
     }
+
     footer {
-      text-align: center;
       background: #111;
       color: white;
+      text-align: center;
       padding: 15px 0;
-      margin-top: 40px;
       font-size: 14px;
+      flex-shrink: 0;
     }
   </style>
 </head>
@@ -119,14 +135,26 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Download Roblox for PC & Mobile</h1>
-    <p>Get the latest version of Roblox and start your gaming adventure today. 100% safe and direct download links available.</p>
-    <a href="#" class="download-btn">Download Now</a>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Download Roblox for PC & Mobile</h1>
+      <p>Get the latest version of Roblox and start your gaming adventure today. 100% safe and direct download links available.</p>
+
+      <!-- ✅ Your link added here -->
+      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip"
+         class="download-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         download>
+        Download Now
+      </a>
+    </section>
+  </main>
+
   <footer>
     &copy; 2025 RobloxDownload.mom | All Rights Reserved.
   </footer>
+
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav ul');
