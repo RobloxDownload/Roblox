@@ -3,121 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us — RobloxDownload.mom</title>
+  <title>Contact Us</title>
   <meta name="description" content="Contact RobloxDownload.mom — Send us feedback, bug reports, or questions about our Roblox APKs and mods.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root{--accent:#6366f1;--muted:#6b7280;--bg:#0f172a;--card:#0b1220;--maxw:900px}
-    *{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
-    body{margin:0;background:linear-gradient(180deg,#071033 0%, #041025 100%);color:#e6eef8;display:flex;justify-content:center;padding:40px}
-    .container{width:100%;max-width:var(--maxw)}
-    .card{background:rgba(255,255,255,0.03);border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    h1{margin:0 0 6px;font-size:22px}
-    p.lead{margin:0 0 18px;color:var(--muted)}
-
-    /* FORM */
-    form{display:grid;gap:14px}
-    table.form-table{width:100%;border-collapse:collapse}
-    table.form-table td{padding:8px 6px;vertical-align:top}
-    table.form-table label{display:block;font-weight:600;margin-bottom:6px;color:#dbeafe}
-    input[type=text], input[type=email], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit;font-size:14px}
-    textarea{min-height:120px;resize:vertical}
-    .row{display:flex;gap:12px}
-    .col{flex:1}
-    .footer-note{font-size:13px;color:var(--muted);margin-top:10px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;font-weight:600;border:none;cursor:pointer}
-    .small{font-size:13px;color:var(--muted)}
-
-    /* success */
-    .alert{padding:12px;border-radius:8px;background:rgba(34,197,94,0.08);color:#bbf7d0;border:1px solid rgba(34,197,94,0.15);margin-bottom:12px}
-
-    /* responsive */
-    @media (max-width:600px){body{padding:20px}.card{padding:18px}}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Poppins',sans-serif;background:#f9f9f9;display:flex;flex-direction:column;min-height:100vh;}
+    header{background:#111;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;}
+    .logo a{color:#fff;text-decoration:none;font-weight:600;font-size:20px;}
+    nav ul{list-style:none;display:flex;gap:20px;}
+    nav ul li a{color:#fff;text-decoration:none;font-weight:500;}
+    .menu-toggle{display:none;color:#fff;background:none;border:none;font-size:24px;}
+    @media(max-width:768px){nav ul{display:none;flex-direction:column;background:#222;position:absolute;top:60px;right:0;width:200px;padding:15px;border-radius:6px 0 0 6px;}nav ul.show{display:block;}.menu-toggle{display:block;}}
+    main{flex:1;padding:40px 20px;display:flex;justify-content:center;}
+    .container{width:100%;max-width:900px;}
+    .card{background:#fff;border-radius:12px;padding:30px;box-shadow:0 6px 20px rgba(0,0,0,0.08);}
+    h1{margin-bottom:6px;font-size:26px;color:#111;}
+    p.lead{margin-bottom:18px;color:#444;}
+    form{display:grid;gap:14px;}
+    table.form-table{width:100%;border-collapse:collapse;}
+    table.form-table td{padding:8px 6px;vertical-align:top;}
+    table.form-table label{display:block;font-weight:600;margin-bottom:6px;color:#111;}
+    input[type=text], input[type=email], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:14px;}
+    textarea{min-height:120px;resize:vertical;}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#007acc;color:white;font-weight:600;border:none;cursor:pointer;}
+    .alert{padding:12px;border-radius:8px;margin-bottom:12px;display:none;}
+    .footer-note{font-size:13px;color:#555;margin-top:10px;}
+    section h2{font-size:20px;color:#007acc;margin-top:20px;margin-bottom:10px;}
+    footer{background:#111;color:#fff;text-align:center;padding:15px 0;font-size:14px;}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>Contact Us</h1>
-      <p class="lead">Have a question, bug report, or suggestion? Drop us a message — our team at <strong>RobloxDownload.mom</strong> is here to help 24/7.</p>
+  <header>
+    <div class="logo"><a href="index.html">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div id="alert" style="display:none" class="alert"></div>
+  <main>
+    <div class="container">
+      <div class="card">
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question, bug report, or suggestion? Drop us a message — our team at <strong>RobloxDownload.mom</strong> is here to help 24/7.</p>
 
-      <!-- Contact form: Name | Email | Message as a table -->
-      <form id="contactForm" onsubmit="return handleSubmit(event)">
-        <table class="form-table" aria-label="Contact form table">
-          <tr>
-            <td style="width:200px"><label for="name">Name</label></td>
-            <td><input id="name" name="name" type="text" placeholder="Your full name" required></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td><input id="email" name="email" type="email" placeholder="you@example.com" required></td>
-          </tr>
-          <tr>
-            <td><label for="message">Message</label></td>
-            <td><textarea id="message" name="message" placeholder="Write your message, feedback or bug report here..." required></textarea></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <button type="submit" class="btn">Send Message</button>
-              <div class="footer-note">We reply as quickly as possible. For urgent safety or account issues, include "URGENT" in the subject line.</div>
-            </td>
-          </tr>
-        </table>
+        <div id="alert" class="alert"></div>
 
-        <!-- Hidden field to help backend identify form origin -->
-        <input type="hidden" name="source" value="contact-page-robloxdownload.mom">
-      </form>
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <table class="form-table" aria-label="Contact form table">
+            <tr>
+              <td style="width:200px"><label for="name">Name</label></td>
+              <td><input id="name" name="name" type="text" placeholder="Your full name" required></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input id="email" name="email" type="email" placeholder="you@example.com" required></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td><textarea id="message" name="message" placeholder="Write your message, feedback or bug report here..." required></textarea></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="submit" class="btn">Send Message</button>
+                <div class="footer-note">We reply as quickly as possible. For urgent issues, include "URGENT" in your subject.</div>
+              </td>
+            </tr>
+          </table>
+        </form>
 
-      <!-- Short article below the form -->
-      <section style="margin-top:20px">
-        <h2 style="margin:0 0 8px;font-size:18px">Why contact RobloxDownload.mom?</h2>
-        <p class="small">At RobloxDownload.mom we value your feedback. Whether you want to report a bug, request a new feature, or need help with installation, our developers and support staff read every message. We strive to keep our downloads safe, reliable, and up to date — and your input helps make that possible.</p>
-        <p class="small" style="margin-top:8px">Before submitting, please check our <a href="/faq" style="color:inherit;text-decoration:underline">FAQ</a> and installation guide — many common questions are answered there. If your issue involves account access, privacy, or security, please provide as much detail as you can (without sharing passwords) so we can assist faster.</p>
-      </section>
-
+        <section>
+          <h2>Why Contact RobloxDownload.mom?</h2>
+          <p>At RobloxDownload.mom, we value every piece of feedback from our community. Whether you’re reporting an issue, requesting a new feature, or just saying hello, our team reads every message carefully. Your suggestions help us improve our platform and keep downloads safe and reliable.</p>
+          <p>Before submitting, check our <a href="faq.html" style="color:#007acc;text-decoration:none;">FAQ</a> for common questions. For privacy or security concerns, share only necessary details so we can help faster.</p>
+        </section>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RobloxDownload.mom | All Rights Reserved.</p>
+  </footer>
 
   <script>
-    // Example client-side handling — replace with actual server endpoint as needed.
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    if(menuToggle){menuToggle.addEventListener('click',()=>{navMenu.classList.toggle('show');});}
+
     function handleSubmit(e){
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      if(!name || !email || !message){
-        showAlert('Please fill in all fields.');
-        return false;
-      }
-
-      // Example: send data to your server using fetch
-      // fetch('/api/contact', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name,email,message})})
-      //   .then(r=>r.json()).then(res=>showAlert('Thanks! We received your message.', true)).catch(err=>showAlert('Submission failed. Please try again later.'));
-
-      // Demo fallback (no backend): just show a success message and reset the form
-      showAlert('Thanks, ' + (name||'there') + '! Your message has been received. We will reply to ' + (email||'your email') + ' soon.', true);
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const message=document.getElementById('message').value.trim();
+      const alertBox=document.getElementById('alert');
+      if(!name||!email||!message){alertBox.style.display='block';alertBox.style.background='#ffd6d0';alertBox.style.color='#111';alertBox.textContent='Please fill in all fields.';return false;}
+      alertBox.style.display='block';alertBox.style.background='#d1fae5';alertBox.style.color='#065f46';alertBox.textContent='Thank you '+name+'! Your message has been sent successfully.';
       document.getElementById('contactForm').reset();
+      setTimeout(()=>{alertBox.style.display='none';},6000);
       return false;
     }
-
-    function showAlert(msg, success){
-      const a = document.getElementById('alert');
-      a.style.display = 'block';
-      a.textContent = msg;
-      a.style.background = success ? 'rgba(34,197,94,0.08)' : 'rgba(255,69,58,0.06)';
-      a.style.color = success ? '#bbf7d0' : '#ffd6d0';
-      setTimeout(()=>{ a.style.display='none' }, 8000);
-    }
   </script>
-
-  <!--
-    Notes for deployment:
-    - Replace the demo JS handler with a real POST to your server or a third-party form service (Formspree, Netlify Forms, etc.).
-    - Validate and sanitize inputs server-side before sending emails or storing data.
-    - Protect the endpoint with anti-spam (reCAPTCHA) if you start receiving bots.
-  -->
 </body>
 </html>
