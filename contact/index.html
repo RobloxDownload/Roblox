@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us</title>
+  <title>Contact Us - RobloxDownload.mom</title>
   <meta name="description" content="Contact RobloxDownload.mom — Send us feedback, bug reports, or questions about our Roblox APKs and mods.">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -15,7 +15,11 @@
     nav ul{list-style:none;display:flex;gap:20px;}
     nav ul li a{color:#fff;text-decoration:none;font-weight:500;}
     .menu-toggle{display:none;color:#fff;background:none;border:none;font-size:24px;}
-    @media(max-width:768px){nav ul{display:none;flex-direction:column;background:#222;position:absolute;top:60px;right:0;width:200px;padding:15px;border-radius:6px 0 0 6px;}nav ul.show{display:block;}.menu-toggle{display:block;}}
+    @media(max-width:768px){
+      nav ul{display:none;flex-direction:column;background:#222;position:absolute;top:60px;right:0;width:200px;padding:15px;border-radius:6px 0 0 6px;}
+      nav ul.show{display:block;}
+      .menu-toggle{display:block;}
+    }
     main{flex:1;padding:40px 20px;display:flex;justify-content:center;}
     .container{width:100%;max-width:900px;}
     .card{background:#fff;border-radius:12px;padding:30px;box-shadow:0 6px 20px rgba(0,0,0,0.08);}
@@ -36,13 +40,15 @@
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html">RobloxDownload.mom</a></div>
+    <div class="logo"><a href="/">RobloxDownload.mom</a></div>
     <button class="menu-toggle">☰</button>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms/">Terms</a></li>
       </ul>
     </nav>
   </header>
@@ -82,7 +88,7 @@
         <section>
           <h2>Why Contact RobloxDownload.mom?</h2>
           <p>At RobloxDownload.mom, we value every piece of feedback from our community. Whether you’re reporting an issue, requesting a new feature, or just saying hello, our team reads every message carefully. Your suggestions help us improve our platform and keep downloads safe and reliable.</p>
-          <p>Before submitting, check our <a href="faq.html" style="color:#007acc;text-decoration:none;">FAQ</a> for common questions. For privacy or security concerns, share only necessary details so we can help faster.</p>
+          <p>Before submitting, check our <a href="/faq/" style="color:#007acc;text-decoration:none;">FAQ</a> for common questions. For privacy or security concerns, share only necessary details so we can help faster.</p>
         </section>
       </div>
     </div>
@@ -103,8 +109,17 @@
       const email=document.getElementById('email').value.trim();
       const message=document.getElementById('message').value.trim();
       const alertBox=document.getElementById('alert');
-      if(!name||!email||!message){alertBox.style.display='block';alertBox.style.background='#ffd6d0';alertBox.style.color='#111';alertBox.textContent='Please fill in all fields.';return false;}
-      alertBox.style.display='block';alertBox.style.background='#d1fae5';alertBox.style.color='#065f46';alertBox.textContent='Thank you '+name+'! Your message has been sent successfully.';
+      if(!name||!email||!message){
+        alertBox.style.display='block';
+        alertBox.style.background='#ffd6d0';
+        alertBox.style.color='#111';
+        alertBox.textContent='Please fill in all fields.';
+        return false;
+      }
+      alertBox.style.display='block';
+      alertBox.style.background='#d1fae5';
+      alertBox.style.color='#065f46';
+      alertBox.textContent='Thank you '+name+'! Your message has been sent successfully.';
       document.getElementById('contactForm').reset();
       setTimeout(()=>{alertBox.style.display='none';},6000);
       return false;
