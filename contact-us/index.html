@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - RobloxDownload.mom</title>
-  <meta name="description" content="Contact RobloxDownload.mom for support, feedback, or business inquiries.">
+  <meta name="description" content="Get in touch with the RobloxDownload.mom team for support, feedback, or inquiries.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
     <div class="logo"><a href="/">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about-us/">About Us</a></li>
-        <li><a href="/contact-us/">Contact Us</a></li>
+        <li><a href="/contact-us/" class="active">Contact</a></li>
         <li><a href="/terms/">Terms</a></li>
         <li><a href="/privacy-policy/">Privacy Policy</a></li>
       </ul>
@@ -24,18 +27,34 @@
   <main>
     <article class="article">
       <h1>Contact Us</h1>
-      <p>If you have any questions, feedback, or partnership inquiries, please reach out using the details below.</p>
+      <p>If you have any questions, feedback, or partnership inquiries, feel free to reach out to us.</p>
 
       <h2>Get in Touch</h2>
-      <p><strong>Email:</strong> support@robloxdownload.mom</p>
-      <p><strong>Business Hours:</strong> Monday–Friday, 9AM–5PM (GMT)</p>
+      <p><strong>Email:</strong> <a href="mailto:support@robloxdownload.mom">support@robloxdownload.mom</a></p>
+      <p><strong>Business Hours:</strong> Monday – Friday, 9 AM – 5 PM (GMT)</p>
+      <p>We typically respond within 24–48 hours. Your satisfaction and safety are our top priorities.</p>
 
-      <p>We aim to respond within 24–48 hours. Your satisfaction and safety are our top priorities.</p>
+      <h2>Feedback</h2>
+      <p>We appreciate your feedback! If you have suggestions or issues with the website, please share them with us. We’re constantly working to make RobloxDownload.mom better for all users.</p>
+
+      <h2>Collaboration</h2>
+      <p>If you're a content creator, blogger, or website owner interested in collaborating, feel free to email us with your proposal.</p>
     </article>
   </main>
 
   <footer>
-    &copy; 2025 RobloxDownload.mom | All Rights Reserved.
+    <p>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.</p>
+    <p>&copy; 2025 RobloxDownload.mom | All Rights Reserved.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    if(menuToggle){
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    }
+  </script>
 </body>
 </html>
