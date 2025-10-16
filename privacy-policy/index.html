@@ -4,19 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - RobloxDownload.mom</title>
-  <meta name="description" content="Read the privacy policy of RobloxDownload.mom and how we protect user data.">
-  <link rel="stylesheet" href="/style.css" />
+  <meta name="description" content="Read the privacy policy of RobloxDownload.mom to understand how we handle your data and protect your privacy." />
+  
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
+  <!-- ✅ Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html,body {
+      height:100%;
+      font-family:'Poppins',sans-serif;
+      background:#f9f9f9;
+      display:flex;
+      flex-direction:column;
+    }
+    header {
+      background:#111;
+      color:#fff;
+      padding:12px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-shrink:0;
+    }
+    .logo a { color:#fff; text-decoration:none; font-weight:600; font-size:20px; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav ul li a { color:#fff; text-decoration:none; font-weight:500; }
+    .menu-toggle { display:none; color:#fff; background:none; border:none; font-size:24px; }
+    @media(max-width:768px){
+      nav ul { display:none; flex-direction:column; background:#222; position:absolute; top:60px; right:0; width:200px; padding:15px; border-radius:6px 0 0 6px; }
+      nav ul.show { display:block; }
+      .menu-toggle { display:block; }
+    }
+
+    main { flex:1; padding:60px 20px; display:flex; flex-direction:column; align-items:center; }
+
+    .article {
+      max-width:900px;
+      width:100%;
+      background:#fff;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom:30px;
+      color:#333;
+      text-align:left;
+      line-height:1.7;
+    }
+    .article h1 { font-size:28px; color:#111; margin-bottom:16px; }
+    .article h2 { font-size:20px; color:#007acc; margin-top:20px; margin-bottom:10px; }
+    .article p { margin-bottom:12px; color:#444; }
+
+    footer {
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:15px 0;
+      font-size:14px;
+      flex-shrink:0;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo"><a href="/">RobloxDownload.mom</a></div>
+    <div class="logo"><a href="/index.html">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/about-us/">About Us</a></li>
-        <li><a href="/contact-us/">Contact Us</a></li>
+        <li><a href="/contact-us/">Contact</a></li>
         <li><a href="/terms/">Terms</a></li>
-        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/privacy-policy/">Privacy</a></li>
       </ul>
     </nav>
   </header>
@@ -24,21 +87,44 @@
   <main>
     <article class="article">
       <h1>Privacy Policy</h1>
-      <p>At RobloxDownload.mom, we respect your privacy and are committed to protecting your personal information.</p>
+      <p>At <strong>RobloxDownload.mom</strong>, your privacy is our top priority. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.</p>
 
       <h2>Information We Collect</h2>
-      <p>We may collect basic analytics data to improve website performance and user experience. No personal data is stored or shared.</p>
+      <p>We may collect basic analytics data such as your browser type, pages visited, and time spent on our site. We do not collect personal information unless you voluntarily provide it (e.g., through a contact form).</p>
 
       <h2>Cookies</h2>
-      <p>We use cookies for analytics and performance improvement only. You can disable cookies in your browser settings at any time.</p>
+      <p>We use cookies to improve your browsing experience and analyze website performance. You can disable cookies in your browser settings anytime.</p>
 
-      <h2>Third-Party Links</h2>
-      <p>Our site may contain links to third-party websites. We are not responsible for their content or privacy practices.</p>
+      <h2>Third-Party Services</h2>
+      <p>Our site may include ads or analytics services (such as Google AdSense). These third-party services may use cookies or tracking technologies according to their own privacy policies.</p>
+
+      <h2>Data Security</h2>
+      <p>We take appropriate measures to protect your data against unauthorized access or disclosure. However, no online service is 100% secure.</p>
+
+      <h2>External Links</h2>
+      <p>RobloxDownload.mom may link to third-party websites. We are not responsible for their content or privacy practices.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy occasionally. Please check this page for any updates.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us via our <a href="/contact-us/">Contact Page</a>.</p>
     </article>
   </main>
 
   <footer>
+    <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.</h3>
     &copy; 2025 RobloxDownload.mom | All Rights Reserved.
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    if(menuToggle){
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    }
+  </script>
 </body>
 </html>
