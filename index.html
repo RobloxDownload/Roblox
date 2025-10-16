@@ -19,129 +19,20 @@
   <!-- ✅ Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html,body {
-      height:100%;
-      font-family:'Poppins',sans-serif;
-      background:#f9f9f9;
-      display:flex;
-      flex-direction:column;
-    }
-
-    header {
-      background:#111;
-      color:#fff;
-      padding:12px 20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-shrink:0;
-    }
-    .logo a { color:#fff; text-decoration:none; font-weight:600; font-size:20px; }
-    nav ul { list-style:none; display:flex; gap:20px; }
-    nav ul li a { color:#fff; text-decoration:none; font-weight:500; }
-    .menu-toggle { display:none; color:#fff; background:none; border:none; font-size:24px; }
-    @media(max-width:768px){
-      nav ul { display:none; flex-direction:column; background:#222; position:absolute; top:60px; right:0; width:200px; padding:15px; border-radius:6px 0 0 6px; }
-      nav ul.show { display:block; }
-      .menu-toggle { display:block; }
-    }
-
-    /* Banner */
-    .hero-banner {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      background:linear-gradient(135deg,#000000,#1a1a40);
-      color:#fff;
-      padding:60px 20px;
-      flex-wrap:wrap;
-    }
-    .banner-content { max-width:550px; }
-    .banner-content h1 { font-size:36px; margin-bottom:15px; color:#00b3ff; }
-    .banner-content p { font-size:18px; color:#ddd; margin-bottom:25px; line-height:1.4; }
-    .banner-btn { background:#00b3ff; color:#fff; padding:12px 25px; border-radius:6px; text-decoration:none; font-weight:700; }
-    .banner-btn:hover { background:#007acc; }
-    .banner-image img { max-width:350px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.5); }
-    @media(max-width:768px){
-      .hero-banner { flex-direction:column; text-align:center; }
-      .banner-image img { margin-top:20px; max-width:80%; }
-    }
-
-    main { flex:1; padding:60px 20px; display:flex; flex-direction:column; align-items:center; }
-
-    /* Article card */
-    .article {
-      max-width:900px;
-      width:100%;
-      background:#fff;
-      padding:40px;
-      border-radius:12px;
-      box-shadow:0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom:30px;
-      color:#333;
-      text-align:left;
-      line-height:1.7;
-    }
-    .article h1 { font-size:28px; color:#111; margin-bottom:16px; }
-    .article h2 { font-size:20px; color:#007acc; margin-top:20px; margin-bottom:10px; }
-    .article h3 { font-size:16px; color:#111; margin-top:12px; margin-bottom:8px; }
-    .article p { margin-bottom:12px; color:#444; }
-    .article ul, .article ol { margin-left:20px; margin-bottom:12px; }
-    .article a { color:#007acc; text-decoration:none; }
-
-    /* Related */
-    .related {
-      max-width:900px;
-      width:100%;
-      background:#fff;
-      padding:24px;
-      border-radius:12px;
-      box-shadow:0 6px 20px rgba(0,0,0,0.06);
-      text-align:left;
-      margin-bottom:40px;
-    }
-    .related h3 { color:#111; border-left:4px solid #007acc; padding-left:10px; margin-bottom:12px; }
-    .related ul { list-style:none; padding-left:0; }
-    .related li { margin-bottom:10px; }
-    .related a { color:#007acc; font-weight:600; text-decoration:none; }
-    .related a:hover { text-decoration:underline; }
-
-    footer {
-      background:#111;
-      color:#fff;
-      text-align:center;
-      padding:15px 0;
-      font-size:14px;
-      flex-shrink:0;
-    }
-
-    .download-btn {
-      display:inline-block;
-      background:#ff4747;
-      color:#fff;
-      padding:14px 28px;
-      border-radius:8px;
-      margin-top:20px;
-      font-weight:600;
-      text-decoration:none;
-    }
-    .download-btn:hover { background:#e63e3e; }
-  </style>
+  <!-- ✅ External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo"><a href="index.html">RobloxDownload.mom</a></div>
     <button class="menu-toggle">☰</button>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Banner -->
