@@ -91,23 +91,6 @@
     .article ul, .article ol { margin-left:20px; margin-bottom:12px; }
     .article a { color:#007acc; text-decoration:none; }
 
-    /* Related */
-    .related {
-      max-width:900px;
-      width:100%;
-      background:#fff;
-      padding:24px;
-      border-radius:12px;
-      box-shadow:0 6px 20px rgba(0,0,0,0.06);
-      text-align:left;
-      margin-bottom:40px;
-    }
-    .related h3 { color:#111; border-left:4px solid #007acc; padding-left:10px; margin-bottom:12px; }
-    .related ul { list-style:none; padding-left:0; }
-    .related li { margin-bottom:10px; }
-    .related a { color:#007acc; font-weight:600; text-decoration:none; }
-    .related a:hover { text-decoration:underline; }
-
     footer {
       background:#111;
       color:#fff;
@@ -132,14 +115,14 @@
 </head>
 <body>
   <header>
-    <div class="logo"><a href="/">RobloxDownload.mom</a></div>
+    <div class="logo"><a href="/index.html">RobloxDownload.mom</a></div>
     <button class="menu-toggle">☰</button>
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
       </ul>
     </nav>
   </header>
@@ -152,13 +135,33 @@
       <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="banner-btn" target="_blank" rel="noopener noreferrer" download>Download Now</a>
     </div>
     <div class="banner-image">
-      <img src="banner-image.png" alt="Roblox Banner">
+      <img src="/banner-image.png" alt="Roblox Banner">
     </div>
   </section>
 
   <main>
-    <!-- (✅ All your existing article content stays same — no change made) -->
-    <!-- ... -->
+    <div class="article">
+      <h1>Welcome to RobloxDownload.mom</h1>
+      <p>At <strong>RobloxDownload.mom</strong>, we provide the safest and most up-to-date versions of Roblox APK. Whether you’re new or an experienced player, you’ll find everything you need here — download links, updates, and guides.</p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>✅ 100% Safe APK Files</li>
+        <li>🚀 Regular Updates</li>
+        <li>🔒 Secure Download Links</li>
+        <li>📱 Mobile Friendly Interface</li>
+      </ul>
+
+      <h2>How to Install Roblox APK</h2>
+      <ol>
+        <li>Click the <strong>Download Now</strong> button above.</li>
+        <li>After downloading, open the APK file.</li>
+        <li>Allow installation from unknown sources if prompted.</li>
+        <li>Open Roblox and start playing!</li>
+      </ol>
+
+      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="download-btn" target="_blank" rel="noopener noreferrer" download>Download Roblox APK</a>
+    </div>
   </main>
 
   <footer>
@@ -173,17 +176,6 @@
       menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('show');
       });
-    }
-
-    // ✅ Permalink Redirect Handler (for GitHub Pages)
-    const path = window.location.pathname;
-    const redirects = {
-      "/about/": "/about.html",
-      "/contact/": "/contact.html",
-      "/privacy-policy/": "/privacy-policy.html"
-    };
-    if (redirects[path]) {
-      window.location.replace(redirects[path]);
     }
   </script>
 </body>
