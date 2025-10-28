@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Studio Launcher (Latest Version)</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Studio Launcher (Latest Build) - RobloxDownload.mom</title>
+  <meta name="description" content="Download the latest Roblox Studio Launcher for easy game creation, scripting, and publishing directly on Roblox." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html,body { height:100%; font-family:'Poppins',sans-serif; background:#f9f9f9; display:flex; flex-direction:column; }
+    header { background:#111; color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-shrink:0; }
+    .logo a { color:#fff; text-decoration:none; font-weight:600; font-size:20px; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav ul li a { color:#fff; text-decoration:none; font-weight:500; }
+    .menu-toggle { display:none; color:#fff; background:none; border:none; font-size:24px; }
+    @media(max-width:768px){ nav ul { display:none; flex-direction:column; background:#222; position:absolute; top:60px; right:0; width:200px; padding:15px; border-radius:6px 0 0 6px; } nav ul.show { display:block; } .menu-toggle { display:block; } }
+    main { flex:1; padding:60px 20px; display:flex; flex-direction:column; align-items:center; }
+    .article { max-width:900px; width:100%; background:#fff; padding:40px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); margin-bottom:30px; color:#333; text-align:left; line-height:1.7; }
+    .article h1 { font-size:28px; color:#111; margin-bottom:16px; }
+    .article h2 { font-size:20px; color:#007acc; margin-top:20px; margin-bottom:10px; }
+    .article p { margin-bottom:12px; color:#444; }
+    footer { background:#111; color:#fff; text-align:center; padding:15px 0; font-size:14px; flex-shrink:0; }
+  </style>
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <div class="logo">RobloxDownload.mom</div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about-us/">About Us</a>
-        <a href="/contact-us/">Contact</a>
-        <a href="/terms-conditions/">Terms</a>
-        <a href="/privacy-policy/">Privacy Policy</a>
-      </nav>
-    </div>
+    <div class="logo"><a href="/index.html">RobloxDownload.mom</a></div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about-us/">About Us</a></li>
+        <li><a href="/contact-us/">Contact</a></li>
+        <li><a href="/terms-conditions/">Terms</a></li>
+        <li><a href="/privacy-policy/">Privacy</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="content-box">
-      <h1>Roblox Studio Launcher (Latest Version)</h1>
-      <p>
-        Roblox Studio Launcher is an essential tool for creators who want to design, build, and test games in Roblox. The latest version offers improved stability, faster startup times, and smoother publishing to the Roblox cloud. Whether you’re a beginner or a professional developer, this launcher simplifies the process of managing your projects, scripts, and assets.
-      </p>
-      <p>
-        With enhanced plugin support and a clean interface, Roblox Studio Launcher allows creators to bring their imagination to life efficiently. You can easily update your creations, collaborate with others, and preview game mechanics in real time. The new launcher ensures seamless integration with Roblox Studio’s latest features, making it a must-have for all aspiring Roblox developers.
-      </p>
-    </section>
+    <article class="article">
+      <h1>Roblox Studio Launcher (Latest Build)</h1>
+      <p>The Roblox Studio Launcher is your gateway to creating, designing, and publishing your very own Roblox games. This latest build comes with a smoother interface, better script handling, and faster project loading times. It’s designed for both beginners and advanced developers who want to create immersive Roblox experiences with powerful customization tools.</p>
+      <p>With the new launcher, you can quickly access pre-built templates, import assets, and collaborate with other creators in real time. It also integrates cloud saves, making it easier to back up and restore your work. Whether you’re building a simulator, obby, or adventure game, Roblox Studio Launcher provides everything you need to bring your imagination to life.</p>
+    </article>
   </main>
 
   <footer>
-    <p>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.<br>
-    © 2025 RobloxDownload.mom | All Rights Reserved.</p>
+    <h3>Welcome to RobloxDownload.mom — your trusted place to download the latest Roblox APK safely and easily.</h3>
+    &copy; 2025 RobloxDownload.mom | All Rights Reserved.
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click',()=>{navMenu.classList.toggle('show');});
+  </script>
 </body>
 </html>
