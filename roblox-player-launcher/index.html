@@ -51,6 +51,25 @@
     .article h1 { font-size:28px; color:#111; margin-bottom:16px; }
     .article h2 { font-size:20px; color:#007acc; margin-top:20px; margin-bottom:10px; }
     .article p { margin-bottom:12px; color:#444; }
+
+    /* ✅ Download Button Style */
+    .download-btn {
+      display:inline-flex;
+      align-items:center;
+      background:#007acc;
+      color:#fff;
+      padding:12px 28px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:16px;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .download-btn:hover {
+      background:#005fa3;
+      transform:translateY(-2px);
+    }
+
     footer {
       background:#111;
       color:#fff;
@@ -81,14 +100,20 @@
       <h1>Roblox Player Launcher (Latest Version)</h1>
       <p>The Roblox Player Launcher allows you to access the Roblox world directly from your desktop. With this lightweight and optimized launcher, players can enjoy faster loading times, automatic updates, and seamless integration with the Roblox platform. Whether you play on Windows or macOS, this version offers stability and improved performance for a smoother gaming experience.</p>
       <p>This latest launcher syncs automatically with your Roblox account, allowing you to jump straight into games without needing to open a browser each time. It features improved connection management, optimized graphics support, and an enhanced interface for easy navigation. Designed with efficiency in mind, it ensures your sessions are fast, secure, and enjoyable. Download now to experience Roblox the way it’s meant to be—simple, quick, and reliable.</p>
-    
-      <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip" class="download-btn" target="_blank" rel="noopener noreferrer" download>
-        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12,5 19,12 12,19"></polyline>
-        </svg>
-        Download Now
-      </a>
+      
+      <!-- ✅ Download Button Added Here -->
+      <div style="text-align:center; margin-top:30px;">
+        <a href="https://dooflixtv.net/wp-content/Roblox%20download%20apk.zip"
+           class="download-btn" target="_blank" rel="noopener noreferrer" download>
+          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+               fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" 
+               style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12,5 19,12 12,19"></polyline>
+          </svg>
+          Download Now
+        </a>
+      </div>
     </article>
   </main>
 
