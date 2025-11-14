@@ -15,13 +15,87 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     html,body { height:100%; font-family:'Poppins',sans-serif; background:#f9f9f9; display:flex; flex-direction:column; }
-    header { background:#111; color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-shrink:0; }
-    .logo a { color:#fff; text-decoration:none; font-weight:600; font-size:20px; }
-    nav ul { list-style:none; display:flex; gap:20px; }
-    nav ul li a { color:#fff; text-decoration:none; font-weight:500; }
-    .menu-toggle { display:none; color:#fff; background:none; border:none; font-size:24px; }
-    @media(max-width:768px){ nav ul { display:none; flex-direction:column; background:#222; position:absolute; top:60px; right:0; width:200px; padding:15px; border-radius:6px 0 0 6px; } nav ul.show { display:block; } .menu-toggle { display:block; } }
 
+    /* NEW HEADER */
+    header {
+      background: #06273b;
+      border-bottom: 2px solid #cc2e43;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-img {
+      height: 42px;
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #cc2e43;
+    }
+
+    /* Mobile Menu */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #083855;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 220px;
+        padding: 15px;
+        border-left: 3px solid #cc2e43;
+        border-bottom: 3px solid #cc2e43;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+
+    /* Hero Banner */
     .hero-banner { display:flex; align-items:center; justify-content:space-between; background:linear-gradient(135deg,#000000,#1a1a40); color:#fff; padding:60px 20px; flex-wrap:wrap; }
     .banner-content { max-width:550px; }
     .banner-content h1 { font-size:36px; margin-bottom:15px; color:#00b3ff; }
@@ -30,7 +104,9 @@
     @media(max-width:768px){ .hero-banner { flex-direction:column; text-align:center; } .banner-image img { margin-top:20px; max-width:80%; } }
 
     main { flex:1; padding:60px 20px; display:flex; flex-direction:column; align-items:center; }
+
     .article { max-width:900px; width:100%; background:#fff; padding:40px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); margin-bottom:30px; color:#333; text-align:left; line-height:1.7; }
+
     .article h1 { font-size:28px; color:#111; margin-bottom:16px; }
     .article h2 { font-size:20px; color:#007acc; margin-top:20px; margin-bottom:10px; }
     .article p { margin-bottom:12px; color:#444; }
@@ -39,17 +115,25 @@
     footer { background:#111; color:#fff; text-align:center; padding:15px 0; font-size:14px; flex-shrink:0; }
   </style>
 </head>
+
 <body>
+
+  <!-- NEW HEADER -->
   <header>
-    <div class="logo"><a href="/">RobloxDownload.mom</a></div>
+    <div class="header-left">
+      <img src="logo.png" class="logo-img" alt="Logo">
+      <a class="site-name" href="/">OBBLOX APK PRO</a>
+    </div>
+
     <button class="menu-toggle">☰</button>
+
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about-us/">About Us</a></li>
-        <li><a href="/contact-us/">Contact Us</a></li>
-        <li><a href="/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="/terms-conditions/">Terms</a></li>
+        <li><a href="/">Roblox mod apk</a></li>
+        <li><a href="/download/">Download</a></li>
+        <li><a href="/pc/">For PC</a></li>
+        <li><a href="/ios/">For iOS</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -67,40 +151,7 @@
   <main>
     <div class="article">
       <h1><h2>Welcome to RobloxDownload.mom</h2>
-<p>RobloxDownload.mom is a friendly guide-based website created especially for Roblox players who want to understand the game better, play safely, and improve their experience step-by-step. Instead of confusing technical terms or risky external links, we explain everything in a simple, clear, and helpful way. Whether you are a new player or someone who has played Roblox before, you will find tips here that will make the game more fun and easier to enjoy.</p>
-
-<h3>What This Website Helps You With</h3>
-<p>Roblox is a massive platform with millions of games, interactive worlds, and creative tools. For many players, it can be confusing at first. That is why we focus on:</p>
-<ul>
-<li><strong>How to install and start Roblox properly</strong> on your device</li>
-<li><strong>Understanding basic controls and settings</strong></li>
-<li><strong>How to find good games</strong> based on your interests</li>
-<li><strong>How to stay safe while playing online</strong></li>
-<li><strong>How to avoid scams, hacked clients, or unsafe downloads</strong></li>
-</ul>
-
-<h3>Why Safety Matters in Roblox</h3>
-<p>Roblox is a fun and creative place, but like every online platform, safety is important. We teach players how to recognize fake websites, avoid scam items or fake “free Robux” offers, and protect their account. If you play carefully, Roblox can be one of the most enjoyable online games to explore and learn from.</p>
-
-<h3>Where Should You Download Roblox?</h3>
-<p>Always download Roblox only from the <strong>official sources</strong> to make sure your game works correctly and your device stays safe:</p>
-<ul>
-<li><strong>Windows / PC:</strong> roblox.com/download</li>
-<li><strong>Android:</strong> Google Play Store</li>
-<li><strong>iPhone / iPad:</strong> Apple App Store</li>
-</ul>
-<p>Never trust random download sites or APK links, because these can cause security risks. RobloxDownload.mom will always guide you towards the correct and safe installation steps.</p>
-
-<h3>Start Learning & Exploring</h3>
-<p>Every day, we share helpful guides that show:</p>
-<ul>
-<li>How to customize your Roblox avatar</li>
-<li>How to fix common errors and gameplay problems</li>
-<li>Recommended games to try for fun, creativity, and competition</li>
-<li>Simple tutorials for controlling your character and settings</li>
-</ul>
-
-<p>So take your time, browse around, and learn something new. Roblox is a big world — and you’re just getting started. 😊</p></p>
+      <p>RobloxDownload.mom is a friendly guide-based website created especially for Roblox players...</p>
     </div>
   </main>
 
@@ -112,7 +163,10 @@
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav ul');
-    if(menuToggle){ menuToggle.addEventListener('click', () => { navMenu.classList.toggle('show'); }); }
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
   </script>
+
 </body>
 </html>
